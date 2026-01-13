@@ -47,6 +47,7 @@ vim.keymap.set("n", "<leader>?", function() require('telescope.builtin').keymaps
 vim.keymap.set("n", "<leader>+", ":resize +1<CR>", { desc = "Increase window size" })
 vim.keymap.set("n", "<leader>_", ":resize -1<CR>", { desc = "Decrease window size" })
 vim.api.nvim_set_keymap('i', '<S-Tab>', '<C-d>', { noremap = true, silent = true })
+vim.keymap.set("x", "p", [["_dP]], { noremap = true, silent = true })
 
 -- copilot
 vim.keymap.set("n", "<leader>cc", "<cmd>CopilotChat<cr>", { desc = "Open Copilot" })
